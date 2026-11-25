@@ -40,7 +40,7 @@ input,textarea{width:100%;font:inherit;color:var(--text);background:var(--bg);bo
 textarea{min-height:110px;resize:vertical}
 details.compose{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
 summary{cursor:pointer;font-weight:700}
-.nav{display:flex;gap:8px;margin-bottom:16px}.nav a{flex:1;text-align:center;text-decoration:none;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-weight:600}.nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}.soc a{color:inherit;text-decoration:none;display:block}.soc .card{cursor:pointer;transition:border-color .15s}.soc .card:hover{border-color:var(--accent)}.bday{margin-top:16px;text-align:center}.bday h3{margin:4px 0}.bday p{margin:0 0 12px;color:var(--muted)}.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.cd div{background:var(--chip);border-radius:12px;padding:10px 4px}.cd b{display:block;font-size:1.6rem;color:var(--accent);font-variant-numeric:tabular-nums}.cd span{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.foot{text-align:center;color:var(--muted);margin-top:36px;font-size:.9rem}
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}input,textarea,#bio{-webkit-user-select:text;user-select:text}.nav{display:flex;gap:8px;margin-bottom:16px}.nav a{flex:1;text-align:center;text-decoration:none;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-weight:600}.nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}.soc a{color:inherit;text-decoration:none;display:block}.soc .card{cursor:pointer;transition:border-color .15s}.soc .card:hover{border-color:var(--accent)}.bday{margin-top:16px;text-align:center}.bday h3{margin:4px 0}.bday p{margin:0 0 12px;color:var(--muted)}.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.cd div{background:var(--chip);border-radius:12px;padding:10px 4px}.cd b{display:block;font-size:1.6rem;color:var(--accent);font-variant-numeric:tabular-nums}.cd span{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.foot{text-align:center;color:var(--muted);margin-top:36px;font-size:.9rem}
 </style>
 </head>
 <body>
@@ -129,30 +129,15 @@ Do What's Right. Never Settle. 🍎</pre>
     <div class="grid soc"><a href="https://www.linkedin.com/in/peytonhooper" target="_blank" rel="noopener"><div class="card"><div class="ic">💼</div><h3>LinkedIn</h3><p>linkedin.com/in/peytonhooper</p></div></a></div>
   </div>
 
-  <div id="v-admin" hidden>
-    <h2>🔐 Admin</h2>
-    <p class="tag" id="admMsg">Checking your account…</p>
-    <div id="admLock" hidden><input id="admPw" type="password" placeholder="Password"><button id="admUnlock">Unlock</button></div>
-    <div id="admBody" hidden>
-      <h2 style="margin-top:6px">⏰ Scheduled posts</h2>
-      <div id="admList"></div>
-      <details class="compose" open><summary>➕ Add or edit a post</summary><div style="margin-top:12px">
-        <input id="admT" placeholder="Post title">
-        <textarea id="admB" placeholder="Post text"></textarea>
-        <input id="admW" type="datetime-local">
-        <button id="admSave">Add post</button> <button class="ghost" id="admCancel">Clear</button>
-      </div></details>
-      <p style="margin-top:14px"><button id="admPub" hidden>Publish changes</button></p>
-    </div>
-  </div>
+  
 
-  <p class="foot">🍎 Do What’s Right. Never Settle. 🍎 · <a href="#admin" style="color:var(--muted)">Admin</a></p>
+  <p class="foot">© 2026 Peyton. All rights reserved.<br>🍎 Do What’s Right. Never Settle. 🍎</p>
 </div>
 <script type="application/json" id="sched">null</script>
 <script>
 (function(){
   var KEY="blogPosts", unlocked=false, posts=[], el=document.getElementById("posts");
-  var SCHED0=[{t:"Locked Pixel 7a, eBay claim: my side",d:"2026-11-22T11:00:00-05:00",b:"I buy cheap phones off eBay, and sell them for more than they are worth, and I bought a Google Pixel 7a, I opened it and I put my SIM in to test and it was locked to Verizon (I use T-Mobile), I submitted a claim to eBay and I get a review today as the package is back to the seller.\n\nThis wasn’t a pleasant experience from this customer. They called my employee a retard and we tried to discourage them from bidding on our item and after insulting us we still purchased from us. We knew this customer was going to be a 💩\n\nI replied:\n\n• Item was defective, seller delayed response to delay return, took as long as they could to process it. I never said that to the seller, they are blatantly lying.\n\nNot only will this affect me buying phones from people, it will also hurt him from making sales. 🙂"},{t:"Hiking Hooker Falls with T-Satellite",d:"2026-11-08T12:00:00-05:00",b:"I went hiking at [Hooker Falls](https://www.dupontforest.com/explore/hooker-falls/) and had SOS. Luckily, once I connected to [T-Satellite](https://www.t-mobile.com/coverage/satellite-phone-service), I was actually pretty impressed. I was able to call my aunt using WhatsApp and never broke up. With places like these, there’s no service anywhere, and with T-Satellite, it improves emergencies and communicating with friends and family. Worth the $10 if you don’t have Experience Beyond. You never know what’s going to happen when you have no service."}];
+  var SCHED0=[{t:"Locked Pixel 7a, eBay claim: my side",d:"2026-11-22T11:00:00-05:00",b:"I buy cheap phones off eBay, and sell them for more than they are worth, and I bought a Google Pixel 7a, I opened it and I put my SIM in to test and it was locked to Verizon (I use T-Mobile), I submitted a claim to eBay and I get a review today as the package is back to the seller.\n\nThis wasn’t a pleasant experience from this customer. They called my employee a retard and we tried to discourage them from bidding on our item and after insulting us we still purchased from us. We knew this customer was going to be a 💩\n\nI replied:\n\n• Item was defective, seller delayed response to delay return, took as long as they could to process it. I never said that to the seller, they are blatantly lying.\n\nNot only will this affect me buying phones from people, it will also hurt him from making sales. 🙂"},{t:"Hiking Hooker Falls with T-Satellite",d:"2026-11-08T12:00:00-05:00",b:"I went hiking at [Hooker Falls](https://www.dupontforest.com/explore/hooker-falls/) and had SOS. Luckily, once I connected to [T-Satellite](https://www.t-mobile.com/coverage/satellite-phone-service), I was actually pretty impressed. I was able to call my aunt using WhatsApp and never broke up. With places like these, there’s no service anywhere, and with T-Satellite, it improves emergencies and communicating with friends and family. Worth the $10 if you don’t have Experience Beyond. You never know what’s going to happen when you have no service."},{t:"Going live with Custom Wood Burning",d:"2026-11-24T00:00:00-05:00",b:"Custom Wood Burning, or CWB, is a parody TikTok account run by the creator @onlyylimestoes, who performs in character as Deirdre “Didi” Burning, a fictional small-business owner. “She” makes deliberately terrible, overpriced wood-burning pieces on cheap slabs of wood and sells them through an Etsy shop called BurnMyWood, playing a character so intentionally unlikable that the whole appeal is the bit. The account started in April 2021 as a joke mocking bad Etsy and small-business creators and blew up through TikTok Lives, where Deirdre burns wood, takes audience requests, and gets mercilessly trolled by her own viewers. That trolling became the community’s entire culture, producing fan catchphrases like “CAWTCHA” and “Do you have any talents?”, and an elaborate lore wiki inventing her backstory, ex-boyfriends, an Arby’s firing, and a Taco Bell ban where she threw a taco at a manager.\n\nFor my part, I requested to go live with her and waited nearly thirty minutes for her stream to start. When it began, I joined and introduced myself as Officer Gabe Itch of the Asheville Police Department, then informed her she was under investigation for locking her cats in a freezer and that we would find her. She muttered “crap, crap, crap,” threw on music to cover the moment, and her chat erupted with people echoing that she was under investigation."}];
   var SCHED=SCHED0;try{var j=JSON.parse(document.getElementById('sched').textContent);if(Array.isArray(j))SCHED=j;}catch(e){}
   var seed=[];
   try{var s=localStorage.getItem(KEY);posts=s?JSON.parse(s):seed.slice();}catch(e){posts=seed.slice();}
@@ -214,78 +199,16 @@ Do What's Right. Never Settle. 🍎</pre>
     document.getElementById("sS").textContent=s%60;
   }
   tick2();setInterval(tick2,1000);
+  document.addEventListener('contextmenu',function(e){if(!/INPUT|TEXTAREA/.test(e.target.tagName))e.preventDefault();});
   setInterval(render,30000);
   function route(){
     var a=location.hash==="#admin",c=location.hash==="#career";
     document.getElementById("v-home").hidden=c||a;
     document.getElementById("v-career").hidden=!c;
-    document.getElementById("v-admin").hidden=!a;
-    if(a)admInit();
     document.getElementById("nHome").classList.toggle("on",!c&&!a);
     document.getElementById("nCareer").classList.toggle("on",c);
     window.scrollTo(0,0);
   }
-  var adm=[],editIdx=-1,admReady=false;
-  function admSet(m){document.getElementById('admMsg').textContent=m;}
-  function toLocal(iso){var d=new Date(iso);d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,16);}
-  function markDirty(){document.getElementById('admPub').hidden=false;admSet('Unsaved changes. Press Publish changes to make them live.');}
-  function admRender(){
-    var l=document.getElementById('admList');
-    if(!adm.length){l.innerHTML='<p class="tag">No scheduled posts yet.</p>';return;}
-    l.innerHTML=adm.map(function(p,i){
-      var live=new Date(p.d)<=new Date();
-      return '<div class="post"><button class="ghost del" data-a="del" data-i="'+i+'">Delete</button><button class="ghost del" style="margin-right:6px" data-a="edit" data-i="'+i+'">Edit</button><h3>'+esc(p.t)+'</h3><time>'+(live?'✅ Live since ':'⏰ Goes live ')+new Date(p.d).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'})+'</time></div>';
-    }).join('');
-  }
-  function admClear(){editIdx=-1;document.getElementById('admT').value='';document.getElementById('admB').value='';document.getElementById('admW').value='';document.getElementById('admSave').textContent='Add post';}
-  function admInit(){
-    if(admReady)return;
-    admReady=true;
-    try{adm=JSON.parse(JSON.stringify(SCHED));}catch(e){adm=[];}
-    if(!(window.claude&&claude.use)){admSet('Admin only works on the published page.');return;}
-    claude.use('user').then(function(u){return u?u.canEdit():false;}).then(function(ok){
-      if(ok){document.getElementById('admLock').hidden=false;admSet('Enter your password to continue.');}
-      else{admSet('Only the page owner can manage scheduled posts. Sign in to claude.ai with the owner account.');}
-    }).catch(function(){admSet('Couldn’t check your account right now.');});
-  }
-  document.getElementById('admList').addEventListener('click',function(e){
-    var a=e.target.getAttribute('data-a'),i=+e.target.getAttribute('data-i');
-    if(!a)return;
-    if(a==='del'){adm.splice(i,1);if(editIdx===i)admClear();markDirty();admRender();}
-    if(a==='edit'){editIdx=i;document.getElementById('admT').value=adm[i].t;document.getElementById('admB').value=adm[i].b;document.getElementById('admW').value=toLocal(adm[i].d);document.getElementById('admSave').textContent='Update post';}
-  });
-  document.getElementById('admSave').onclick=function(){
-    var t=document.getElementById('admT').value.trim(),b=document.getElementById('admB').value.trim(),w=document.getElementById('admW').value;
-    if(!t||!b||!w){admSet('Fill in the title, the post and the date and time.');return;}
-    var o={t:t,b:b,d:new Date(w).toISOString()};
-    if(editIdx>=0)adm[editIdx]=o;else adm.push(o);
-    admClear();markDirty();admRender();
-  };
-  document.getElementById('admUnlock').onclick=function(){
-    var v=document.getElementById('admPw').value;
-    try{crypto.subtle.digest('SHA-256',new TextEncoder().encode(v)).then(function(buf){
-      var h=Array.from(new Uint8Array(buf)).map(function(x){return ('0'+x.toString(16)).slice(-2);}).join('');
-      if(h===HASH){document.getElementById('admLock').hidden=true;document.getElementById('admBody').hidden=false;admSet('');admRender();}
-      else{admSet('Wrong password.');}
-    });}catch(e){admSet('Couldn’t check the password here.');}
-  };
-  document.getElementById('admCancel').onclick=admClear;
-  document.getElementById('admPub').onclick=function(){
-    admSet('Publishing…');
-    claude.use('artifact').then(function(art){
-      if(!art){admSet('Publishing isn’t available here.');return;}
-      var c=document.documentElement.cloneNode(true);
-      c.querySelector('#sched').textContent=JSON.stringify(adm).replace(/</g,'\\u003c');
-      c.querySelector('#posts').innerHTML='';
-      c.querySelector('#admList').innerHTML='';
-      c.querySelector('#lock').setAttribute('style','margin-top:12px');
-      c.querySelector('#form').setAttribute('style','margin-top:12px;display:none');
-      c.querySelector('#v-home').removeAttribute('hidden');
-      ['v-career','v-admin','admBody','admPub','admLock'].forEach(function(id){c.querySelector('#'+id).setAttribute('hidden','');});
-      c.querySelector('#admMsg').textContent='Checking your account…';
-      return art.publish('<!DOCTYPE html>\n'+c.outerHTML);
-    }).catch(function(err){admSet('Couldn’t publish: '+((err&&err.message)||'please try again'));});
-  };
   window.addEventListener("hashchange",route);route();
   var HASH="3a7d738239cccb0b0dd0ebf4e927ef7aff25ca38e475ff140aa5e6e82d75cf5b";
   document.getElementById("unlock").onclick=function(){
